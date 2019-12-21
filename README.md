@@ -1,5 +1,5 @@
 # Bull's Eye
-An first ios tutorial, following Ray Wenderlich's ( @raywenderlich ) course on iOS app development.
+An first ios tutorial with SwiftUI, following Ray Wenderlich's ( @raywenderlich ) course on iOS app development.
 
 ## Version
 - Swift 5, iOS 13, Xcode 11
