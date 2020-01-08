@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5B49BA623C5EF46006A912B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B49BA523C5EF46006A912B /* AboutView.swift */; };
 		B5C3512723AA2B3A008E4A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3512623AA2B3A008E4A2D /* AppDelegate.swift */; };
 		B5C3512923AA2B3A008E4A2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3512823AA2B3A008E4A2D /* SceneDelegate.swift */; };
 		B5C3512B23AA2B3A008E4A2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3512A23AA2B3A008E4A2D /* ContentView.swift */; };
@@ -35,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B5C3512323AA2B3A008E4A2D /* BullseyePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullseyePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B49BA523C5EF46006A912B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B5C3512323AA2B3A008E4A2D /* Bull's Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C3512623AA2B3A008E4A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C3512823AA2B3A008E4A2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B5C3512A23AA2B3A008E4A2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		B5C3512423AA2B3A008E4A2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5C3512323AA2B3A008E4A2D /* BullseyePractice.app */,
+				B5C3512323AA2B3A008E4A2D /* Bull's Eye.app */,
 				B5C3513923AA2B3F008E4A2D /* BullseyePracticeTests.xctest */,
 				B5C3514423AA2B3F008E4A2D /* BullseyePracticeUITests.xctest */,
 			);
@@ -102,6 +104,7 @@
 				B5C3512623AA2B3A008E4A2D /* AppDelegate.swift */,
 				B5C3512823AA2B3A008E4A2D /* SceneDelegate.swift */,
 				B5C3512A23AA2B3A008E4A2D /* ContentView.swift */,
+				B5B49BA523C5EF46006A912B /* AboutView.swift */,
 				B5C3512C23AA2B3F008E4A2D /* Assets.xcassets */,
 				B5C3513123AA2B3F008E4A2D /* LaunchScreen.storyboard */,
 				B5C3513423AA2B3F008E4A2D /* Info.plist */,
@@ -153,7 +156,7 @@
 			);
 			name = BullseyePractice;
 			productName = BullseyePractice;
-			productReference = B5C3512323AA2B3A008E4A2D /* BullseyePractice.app */;
+			productReference = B5C3512323AA2B3A008E4A2D /* Bull's Eye.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B5C3513823AA2B3F008E4A2D /* BullseyePracticeTests */ = {
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B49BA623C5EF46006A912B /* AboutView.swift in Sources */,
 				B5C3512723AA2B3A008E4A2D /* AppDelegate.swift in Sources */,
 				B5C3512923AA2B3A008E4A2D /* SceneDelegate.swift in Sources */,
 				B5C3512B23AA2B3A008E4A2D /* ContentView.swift in Sources */,
@@ -443,9 +447,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gred.BullseyePractice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,9 +466,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gred.BullseyePractice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
