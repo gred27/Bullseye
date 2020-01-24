@@ -21,7 +21,14 @@ class ViewController: UIViewController {
         
         alertController.addAction(alertAction)
         present(alertController, animated: true, completion: nil)
-        print("hello")
+    }
+    
+    @IBAction func knockingAlert() {
+        let alertController = UIAlertController(title: "Twice!", message: "No sana, No life,", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Good good.", style: .cancel, handler: nil)
+        
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
     }
 }
 
