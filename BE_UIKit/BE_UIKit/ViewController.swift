@@ -23,11 +23,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = Int(slider.value.rounded())
-        startNewRound()
+        startNewGame()
     }
 
     @IBAction func showAlert() {
-        let difference = abs(currentValue-targetValue)()
+        let difference = abs(currentValue-targetValue)
         var currentScore = 100 - difference
         
         
@@ -49,16 +49,14 @@ class ViewController: UIViewController {
         let message = "You scored \(currentScore) points!"
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Good good.", style: .default, handler: nil)
+        let alertAction = UIAlertAction(
+            title: "Good good.", style: .default, handler: {
+                action in
+                self.startNewRound()
+        })
         alertController.addAction(alertAction)
         present(alertController, animated: true, completion: nil)
-        
-        startNewRound()
     }
-    
-    @IBAction func showSliderValue (_ slider:UISlider) {
-    }
-    
     
     func startNewRound() {
         targetValue = Int.random(in: 1...100)
@@ -75,5 +73,10 @@ class ViewController: UIViewController {
         roundLabel.text = String(currentRound)
     }
     
+    @IBAction func startNewGame() {
+        score = 0
+        currentRound = 0
+        startNewRound()
+    }
 }
 
