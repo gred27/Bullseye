@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B509B44A23EAD60600577C34 /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = B509B44923EAD60600577C34 /* Bullseye.html */; };
 		B52137C623DA96E700861566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52137C523DA96E700861566 /* AppDelegate.swift */; };
 		B52137C823DA96E700861566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52137C723DA96E700861566 /* SceneDelegate.swift */; };
 		B52137CA23DA96E700861566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52137C923DA96E700861566 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B509B44923EAD60600577C34 /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Bullseye.html; sourceTree = "<group>"; };
 		B52137C223DA96E700861566 /* BE_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BE_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52137C523DA96E700861566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B52137C723DA96E700861566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				B52137CB23DA96E700861566 /* Main.storyboard */,
 				B52137CE23DA96E900861566 /* Assets.xcassets */,
 				B52137D023DA96E900861566 /* LaunchScreen.storyboard */,
+				B509B44923EAD60600577C34 /* Bullseye.html */,
 				B52137D323DA96E900861566 /* Info.plist */,
 			);
 			path = BE_UIKit;
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B52137D223DA96E900861566 /* LaunchScreen.storyboard in Resources */,
+				B509B44A23EAD60600577C34 /* Bullseye.html in Resources */,
 				B52137CF23DA96E900861566 /* Assets.xcassets in Resources */,
 				B52137CD23DA96E700861566 /* Main.storyboard in Resources */,
 			);
