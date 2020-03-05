@@ -24,23 +24,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         currentValue = Int(slider.value.rounded())
         startNewGame()
-        
-        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
-        slider.setThumbImage(thumbImageNormal, for: .normal)
-        
-        let thumbImageHighLigted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
-        slider.setThumbImage(thumbImageHighLigted, for: .highlighted)
-        
-        let inset = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
-        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
-        let trackLeftResizeable = trackLeftImage.resizableImage(withCapInsets: inset)
-        slider.setMinimumTrackImage(trackLeftResizeable , for: .normal)
-        
-        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
-        let trackRightResizeable = trackRightImage.resizableImage(withCapInsets: inset)
-        slider.setMaximumTrackImage(trackRightResizeable , for: .normal)
+        setScollImage()
     }
-
+    
     @IBAction func showAlert() {
         let difference = abs(currentValue-targetValue)
         var currentScore = 100 - difference
@@ -71,6 +57,23 @@ class ViewController: UIViewController {
         })
         alertController.addAction(alertAction)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    func setScollImage() {
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHighLigted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighLigted, for: .highlighted)
+        
+        let inset = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizeable = trackLeftImage.resizableImage(withCapInsets: inset)
+        slider.setMinimumTrackImage(trackLeftResizeable , for: .normal)
+        
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackRightResizeable = trackRightImage.resizableImage(withCapInsets: inset)
+        slider.setMaximumTrackImage(trackRightResizeable , for: .normal)
     }
     
     func startNewRound() {
